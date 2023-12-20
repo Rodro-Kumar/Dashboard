@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --Purple: #4d44b5;
+  --lightWhite: #f3f4ff;
+  --textColor: #303972;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =======================================================================================================
+
+=========================================================================================================*/
+
+.left-part {
+  background-color: var(--Purple);
+  padding-left: 46px;
+  padding-top: 50px;
+  width: 502px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.logo h2 {
+  color: #fff;
+  font-family: var(--poppins);
+  font-size: 36px;
+  font-weight: 700;
+  border-radius: 16px;
+  background: #fb7d5b;
+  padding: 4px 12px;
+}
+
+.logo h1 {
+  color: var(--Color-White, #fff);
+  font-family: var(--poppins);
+  font-size: 36px;
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+.main-box {
+  display: flex;
+}
+
+.list {
+  width: 100%;
+  padding: 16px 24px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.list:hover {
+  background-color: #f3f4ff;
+}
+
+.list:hover a {
+  color: var(--Purple);
+}
+
+.list:nth-child(3) {
+  background-color: #fff;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.list:nth-child(3) a {
+  color: var(--Purple);
+}
+
+.list a {
+  color: var(--Color-Gray-2, #c1bbeb);
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list a span {
+  padding-right: 24px;
+  font-size: 23px;
+}
+
+h4 {
+  color: var(--Color-White, #fff);
+  font-family: var(--poppins);
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+
+h6 {
+  color: var(--Color-White, #fff);
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+h6 span {
+  color: red;
+  font-size: 20px;
+}
+
+/* ================================================================================================
+
+===================================================================================================*/
+
+.right-part {
+  background-color: #f3f4ff;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.right-part-item {
+  padding: 0 50px;
+}
+
+.right-part-item h1 {
+  color: var(--textColor);
+  font-family: var(--poppins);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-right {
+  display: flex;
+  align-items: center;
+}
+
+.heading-right .fa-bell {
+  padding: 14px;
+  background-color: #fff;
+  font-size: 24px;
+  color: #a098ae;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+  position: relative;
+}
+
+.heading-right .fa-bell:hover {
+  background-color: #303972ab;
+  color: #fff;
+}
+
+.heading-right .fa-bell:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--Purple);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 10px;
+  right: 8px;
+}
+
+.heading-right .fa-gear {
+  padding: 14px;
+  background-color: #fff;
+  font-size: 22px;
+  color: #a098ae;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+
+.heading-right .fa-gear:hover {
+  background-color: #303972ab;
+  color: #fff;
+}
+
+.heading-user {
+  display: flex;
+  align-items: center;
+}
+
+.heading-user .name {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 18px;
+}
+
+.heading-user .name h3 {
+  color: var(--textColor);
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.heading-user .name p {
+  color: #a098ae;
+  font-family: var(--poppins);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background: url(/image/mssi-mentor-banner2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* ===========================================================================================
+
+============================================================================================*/
+
+.nav-part {
+  display: flex;
+  align-items: center;
+}
