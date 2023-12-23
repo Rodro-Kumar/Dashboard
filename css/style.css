@@ -80,6 +80,12 @@ div {
   border-bottom-left-radius: 40px;
   border-top-left-radius: 40px;
   margin-bottom: 20px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.1s;
+  cursor: pointer;
 }
 
 .list:hover {
@@ -111,7 +117,7 @@ div {
 }
 
 .list:nth-child(3) a {
-  color: var(--Purple);
+  color: #fff;
 }
 
 .list a {
@@ -119,6 +125,11 @@ div {
   font-family: var(--poppins);
   font-size: 18px;
   font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.1s;
 }
 
 .list a span {
@@ -182,10 +193,10 @@ h6 span {
 }
 
 .heading-right .fa-bell {
-  padding: 14px;
+  padding: 14px 16px;
   background-color: #fff;
   font-size: 24px;
-  color: #a098ae;
+  color: #ff302c;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -200,8 +211,8 @@ h6 span {
 }
 
 .heading-right .fa-bell:hover {
-  background-color: #303972ab;
-  color: #fff;
+  background-color: #ff666157;
+  color: #ff302c;
 }
 
 .heading-right .fa-bell:after {
@@ -209,7 +220,7 @@ h6 span {
   content: "";
   width: 8px;
   height: 8px;
-  background-color: var(--Purple);
+  background-color: #ff302c;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -223,7 +234,7 @@ h6 span {
   padding: 14px;
   background-color: #fff;
   font-size: 22px;
-  color: #a098ae;
+  color: #ff6661;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -239,8 +250,8 @@ h6 span {
 }
 
 .heading-right .fa-gear:hover {
-  background-color: #303972ab;
-  color: #fff;
+  background-color: #ff666157;
+  color: #ff302c;
 }
 
 .heading-user {
@@ -251,7 +262,7 @@ h6 span {
 .heading-user .name {
   padding-right: 24px;
   padding-left: 24px;
-  padding-top: 18px;
+  padding-top: 7px;
 }
 
 .heading-user .name h3 {
@@ -272,7 +283,7 @@ h6 span {
   width: 60px;
   height: 60px;
   border-radius: 40px;
-  background: url(/image/mssi-mentor-banner2.png);
+  background: url(/image/download.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -340,15 +351,15 @@ input::placeholder {
 }
 
 .search:hover input {
-  box-shadow: 0px 1px 11px 0px rgba(77, 68, 181, 0.35);
-  -webkit-box-shadow: 0px 1px 11px 0px rgba(77, 68, 181, 0.35);
-  -moz-box-shadow: 0px 1px 11px 0px rgba(77, 68, 181, 0.35);
+  box-shadow: 0px 0px 6px -1px rgba(255, 91, 85, 0.75);
+  -webkit-box-shadow: 0px 0px 6px -1px rgba(255, 91, 85, 0.75);
+  -moz-box-shadow: 0px 0px 6px -1px rgba(255, 91, 85, 0.75);
 }
 
 .select {
   padding: 16px 43px;
   border-radius: 40px;
-  border: 2px solid var(--Color-Purple, #4d44b5);
+  border: 2px solid #ff5b55;
   display: flex;
   align-items: center;
   transition: all linear 0.1s;
@@ -361,7 +372,7 @@ input::placeholder {
 
 .select h5 {
   font-family: var(--poppins);
-  color: var(--Color-Purple, #4d44b5);
+  color: #ff3530;
   font-size: 18px;
   font-weight: 400;
   margin: 0;
@@ -369,13 +380,20 @@ input::placeholder {
 
 .select i {
   font-size: 22px;
-  color: #4d44b5;
+  color: #ff3530;
   padding-left: 16px;
   margin-bottom: 5px;
 }
 
 .select:hover {
-  background-color: #4d44b5;
+  background: linear-gradient(
+    to right top,
+    #ff3530,
+    #ff433d,
+    #ff5049,
+    #ff5b55,
+    #ff6661
+  );
 }
 
 .select:hover h5 {
@@ -388,7 +406,14 @@ input::placeholder {
 
 .new-sttudent {
   padding: 20px 30px;
-  background-color: var(--Purple);
+  background: linear-gradient(
+    to right top,
+    #ff3530,
+    #ff433d,
+    #ff5049,
+    #ff5b55,
+    #ff6661
+  );
   color: #fff;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -397,11 +422,7 @@ input::placeholder {
   -o-border-radius: 40px;
   align-items: center;
   margin-left: 24px;
-  transition: all linear 0.1s;
-  -webkit-transition: all linear 0.1s;
-  -moz-transition: all linear 0.1s;
-  -ms-transition: all linear 0.1s;
-  -o-transition: all linear 0.1s;
+  cursor: pointer;
 }
 
 .new-sttudent h4 {
@@ -418,7 +439,7 @@ input::placeholder {
 }
 
 .new-sttudent:hover {
-  background-color: #6a5df7;
+  background: #f80400;
 }
 
 /* ====================================================================================
@@ -519,7 +540,13 @@ input::placeholder {
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+
+.student1:hover .left-overlay {
+  display: block;
+}
+
 .left-overlay {
   position: absolute;
   width: 5px;
@@ -527,13 +554,14 @@ input::placeholder {
   top: 0;
   left: 0;
   background-color: #ff3d3b;
+  display: none;
 }
 
 .studentlogo {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  background: var(--Color-Gray-2, #c1bbeb);
+  background: #d48383;
   margin-left: 15px;
 }
 
